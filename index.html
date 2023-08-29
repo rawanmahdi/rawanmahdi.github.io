@@ -103,7 +103,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 						<div class="fh5co-nav-call-to-action js-fh5co-nav-call-to-action">
 							<a href="https://www.linkedin.com/in/rawan-mahdi/" > <img width="30" src="images/linkedin.png" align:right; > </a>
 							<a href="https://github.com/rawanmahdi" ><img width="30" src="images/github.png" > </a>
-							<a href="https://scholar.google.com/" ><img width="30" src="images/google_schol.png" > </a>
+							<!-- <a href="https://scholar.google.com/" ><img width="30" src="images/google_schol.png" > </a> -->
 						</div>
 						</a>
 					
@@ -141,26 +141,49 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 			<!-- Start Papers-->
 			<div id="fh5co-work">
 				<div class="container">
-					<a NAME="Papers"><h4>Research Papers</h4></a>
-				  	<div class="p13"> Visit my <a  href="http://scholar.google.com" >Google Scholar</a></div>
-				  	<!-- <div class="row"> -->
+				<a NAME="Papers"><h4>Research Papers</h4></a>
+				<div class="row">
 
-				<!-- Start One paper-->
-				<div class="fh5co-spacer fh5co-spacer-xs"></div>
-				<div class='paper-title'>
-	  				GradCAM
-				</div>
-				<div class='tldr'>
-				  Summary: Proposal of explainability based debugging framework using Gradient base Class Activation Maps. Applications to models that memorize image data. 
-				</div>
-				<div class='paper-contents'>
-	  				Rawan Mahdi, author2, ...
-				<br />
-		  		[<a href="https://arxiv.org">arxiv</a>]
+					<!-- <div class="p13"> Visit my <a  href="http://scholar.google.com" >Google Scholar</a></div> -->
+						<!-- <div class="row"> -->
+
+					<!-- Start GradCAM paper-->
+					<div class="fh5co-spacer fh5co-spacer-xs"></div>
+					
+					<div class='paper-title'>
+						Visualizing Memorization in Convolutional Layers using GradCAM
+					</div>
+
+					<div class='tldr'>
+					Summary: Proposal of explainability based debugging framework using Gradient base Class Activation Maps. Applications to models that memorize image data. 
+					</div>
+
+					<div class='paper-contents'>
+						(pending submission, link will be available after submission)
+					<br />
+					[<a href="https://arxiv.org">arxiv</a>]
+					</div>
+
+					<!-- Start XAI paper-->
+					<div class="fh5co-spacer fh5co-spacer-xs"></div>
+					
+					<div class='paper-title'>
+						Can State-of-the-Art explainable AI algorithms Satisfy Clinical AI Requirements?
+					</div>
+
+					<div class='tldr'>
+					Summary: An overview of the shortcomings of current state of the art XAI algorithms with respect to clinical decision support systems. This article aims to point out the gap between
+					identifying field requirements and meeting them with state of the art tools. 
+					</div>
+
+					<div class='paper-contents'>
+						(pending submission, link will be available after submission)
+					<br />
+					[<a href="https://arxiv.org">arxiv</a>]
+					</div>
 
 				</div>
-	  			<!-- End One paper-->
-
+				</div>
 		<!-- End Papers-->
 	</br>
 		<!-- Start Open Source-->
@@ -179,19 +202,20 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 							quality code. Below are a few of my recent open source contributions, each linked with their associated PR or repo.
 						</p>
 					</div>
+					<!-- open src 1 -->
+					<a href="https://github.com/rawanmahdi/cnncam">rawanmahdi/cnncam</a>
+					<div class='tldr'>
+						TL;DR: Python library for generating visual explanations of convolutional neural network image classification, implementation of GradCAM proposed by R. Selvaraju 
+					</div>
+					<!-- open src 2 -->
+					<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				
+					<a href="https://github.com/NorskRegnesentral/shapr/pull/345">NorskRegnesentral/shapr/pull/345</a>
+					<div class='tldr'>
+						TL;DR: Shapley feature importance library that doesn't assume feature importance unlike kernel SHAP. I integrated native support for keras models.
+					</div>
 			</div>
-			<!-- open src 1 -->
-			<a href="https://github.com/rawanmahdi/cnncam">rawanmahdi/cnncam</a>
-			<div class='tldr'>
-				TL;DR: Python library for generating visual explanations of convolutional neural network image classification, implementation of GradCAM proposed by R. Selvaraju 
-			</div>
-			<!-- open src 2 -->
-			<div class="fh5co-spacer fh5co-spacer-xs"></div>
-		
-			<a href="https://github.com/NorskRegnesentral/shapr/pull/345">NorskRegnesentral/shapr/pull/345</a>
-	  		<div class='tldr'>
-				TL;DR: Shapley feature importance library that doesn't assume feature importance unlike kernel SHAP. I integrated native support for keras models.
-	  		</div>
+			
 				
 		</div>
 		<!-- End Open Source-->
@@ -201,7 +225,64 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 		<div id="fh5co-work">
 			<div class="container">
 			<a NAME="Projects"><h4>Other Projects</h4></a>
-			<div class="row">	
+			<div class="row">
+				<!-- Therapy Bot -->
+				<a href="https://github.com/rawanmahdi/therapy-bot"> Therapy Bot (hackathon submission)</a>
+				<div class='tldr'>
+					Language/Tools: Python, Tensorflow, TF Hub, pandas 
+					<br />
+					Description: Sourced large dataset containing langauge and sentiment classes, fine tuned a general purpose pretrained NLP model off TF Hub to classify user's emotions and sentiment to respond accordingly. 
+				<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				<!-- Amazon Review -->
+				<a href="https://github.com/rawanmahdi/amamzon-reviews-classifier"> Amazon Review Sentiment Analysis (personal project)</a>
+				<div class='tldr'>
+					Language/Tools: Python, Tensorflow, TF Hub, TF Serving, Docker, RESTful API
+					<br />
+					Description: Fine-tuned a pretrained text embedding model via TensorFlow Hub to classify sentiments of customer product reviews.
+					Simulated predictions via RESTful API, and cloud application deployment via TensorFlow Serving and Docker in manner efficient for scaling and versioning large models
+				<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				<!-- MNIST in Numpy -->
+				<a href="https://github.com/rawanmahdi/digit-classifier-numpy"> Hand Written Digit Classifier using Numpy Alone (personal project)</a>
+				<div class='tldr'>
+					Language/Tools: Python, NumPy
+					<br />
+					Description: Programmed MNIST hand written digit classifier without ML libraries (i.e. using mathematics of ML alone), implemeted gradient decent back propoagation and predictions with 85% accuracy. 
+					This project was a cornerstone to my foundational knowledge of the math behind heuristic machine learning. 
+				<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				<!-- Mesh Generator -->
+				<a> Island Generator (course project, private repo)</a>
+				<div class='tldr'>
+					Language/Tools: Java, Apache Maven, JUnit
+					<br />
+					Description: Collaborated in team, developing graphics system to produce 2D meshes for various applications, including random island generation based on user's custom configuration.
+					Employed SOLID principles of object oriented programming to develop scalable code, and managed dependencies for multilayered project 
+
+					<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				<!-- Piraten Kapern -->
+				<a href="https://github.com/rawanmahdi/piraten-kapern">Piraten Kapern Game Simulator (course project)</a>
+				<div class='tldr'>
+					Language/Tools: Java, Apache Maven, Log4j
+					<br />
+					Description: Implemented SOLID and SWE best practices, managed dependancies, generated minimum-viable-product and expanded product via features generated according to buisness requirements. 
+				<div class="fh5co-spacer fh5co-spacer-xs"></div>
+					<!-- LEDice -->
+				<a href="https://dailynews.mcmaster.ca/articles/first-year-mac-eng-students-present-assistive-designs-in-year-end-showcase/#:~:text=Honourable%20Mention-,LEDice,-Haniye%20Hamidizadeh%2C%20Rawan">
+				LEDice (cournerstone project)</a>
+				<div class='tldr'>
+					Language/Tools: Arduino, AutoCAD
+					<br />
+					Description: Built custom dice for client with limited hand dexterity that 'rolls' digital dice when hand gesture is detected via IR sensors. Project completed in team of 4 and selected as one of 12 of 200 submissions at the end of year showcase. 
+				<div class="fh5co-spacer fh5co-spacer-xs"></div>
+				
+				<!-- Chest X-Ray  -->
+				<a > Chest X-Ray Diagnostic Model (personal project, private repo)</a>
+				<div class='tldr'>
+					Language/Tools: Python, Tensorflow, SciKit-Image
+					<br />
+					Description: Built program to process chest x-ray image data using pandas and scikit-image. Implemented ResNet machine learning model using Python (TensorFlow, scikit-learn) to train and predict diagnosis of diseased lungs with over 85 percent accuracy.
+				
+			</div>
+				
 			</div>
 		</div>
 		<!-- End Projects-->

@@ -134,6 +134,20 @@ h6, .h6 {
   line-height: 24px;
 }
 
+div.paper-title {
+  font-size: 16px;
+   font-weight: bold;
+}
+
+div.tldr {
+  font-size: 14px;
+   /* font-weight: bold; */
+}
+
+div.paper-contents{
+  font-size: 14px;
+}
+
 ul, ol {
   padding-left: 15px;
   line-height: 26px;
